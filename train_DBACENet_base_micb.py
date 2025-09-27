@@ -317,8 +317,8 @@ def train(args, opts):
     print(f"[INFO] Number of parameters: {n_params:,}")
     
     summary(model,
-    input_size=[(1, 243, 17, 3),     # x的尺寸
-           (1, 243, 1024)], # fea的尺寸
+    input_size=[(1, 243, 17, 3),     
+           (1, 243, 1024)], 
     depth=4,
     col_names=["input_size", "output_size", "num_params", "mult_adds","trainable"])
     
@@ -354,8 +354,8 @@ def train(args, opts):
             opts.resume = False
             
     summary(model,
-        input_size=[(1, 243, 17, 3),     # x的尺寸
-               (1, 243, 1024)], # fea的尺寸
+        input_size=[(1, 243, 17, 3),    
+               (1, 243, 1024)], 
         depth=4,
         col_names=["input_size", "output_size", "num_params", "mult_adds","trainable"])
 

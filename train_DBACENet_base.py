@@ -318,8 +318,8 @@ def train(args, opts):
     
     
     summary(model,
-            input_size=(1, 243, 17, 3),    # x的尺寸
-                    # fea的尺寸
+            input_size=(1, 243, 17, 3),    
+                    
             depth=4,
             col_names=["input_size", "output_size", "num_params", "mult_adds","trainable"])
     

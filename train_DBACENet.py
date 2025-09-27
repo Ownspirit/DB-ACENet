@@ -297,7 +297,7 @@ def train(args, opts):
     model.to(device)
     # print(*[[name, _.shape] for name, _ in model.named_parameters()], sep='\n')
     # ## Load pre-trained model
-    hmr_checkpoint_path = "./checkpoint/best_hmr_3layer.pth.tr"
+    hmr_checkpoint_path = "./checkpoint/best_hmr_2layer.pth.tr"
     hmr_checkpoint = torch.load(hmr_checkpoint_path)
     # checkpoint_2d_path = "/root/autodl-tmp/d2.pth.tr"
     # checkpoint_2d = torch.load(checkpoint_2d_path)
@@ -317,8 +317,8 @@ def train(args, opts):
     print(f"[INFO] Number of parameters: {n_params:,}")
     
     summary(model,
-    input_size=[(1, 243, 17, 3),     # x的尺寸
-           (1, 243, 1024)], # fea的尺寸
+    input_size=[(1, 243, 17, 3),     
+           (1, 243, 1024)], 
     depth=4,
     col_names=["input_size", "output_size", "num_params", "mult_adds","trainable"])
     
@@ -355,8 +355,8 @@ def train(args, opts):
             opts.resume = False
             
     # summary(model,
-    #     input_size=[(1, 243, 17, 3),     # x的尺寸
-    #            (1, 243, 1024)], # fea的尺寸
+    #     input_size=[(1, 243, 17, 3),     
+    #            (1, 243, 1024)], 
     #     depth=4,
     #     col_names=["input_size", "output_size", "num_params", "mult_adds","trainable"])
 

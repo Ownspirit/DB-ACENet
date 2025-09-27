@@ -320,7 +320,7 @@ def train(args, opts):
     
     #print parameter
     summary(model,
-        input_size=(1, 243, 1024), # fea的尺寸
+        input_size=(1, 243, 1024), 
         depth=3,
         col_names=["input_size", "output_size", "num_params", "mult_adds","trainable"])
 
