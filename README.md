@@ -33,9 +33,11 @@ python h36m.py  --n-frames 243
 Please refer to [P-STMO](https://github.com/paTRICK-swk/P-STMO#mpi-inf-3dhp) for dataset setup. After preprocessing, the generated .npz files (`data_train_3dhp.npz` and `data_test_3dhp.npz`) should be located at `data/motion3d` directory.
 
 # Download
-The intermediate feature representations of MICB branch is available at [here](https://drive.google.com/drive/folders/1MhWKZSi0xiQ8OA_O2Z1kJjWA0nANn30w?usp=sharing).
+The intermediate feature representations of MICB branch is available [here](https://drive.google.com/drive/folders/1MhWKZSi0xiQ8OA_O2Z1kJjWA0nANn30w?usp=sharing).
 
-Download the checkpoints of best epoch and pre-train model from [here](https://drive.google.com/drive/folders/1MhWKZSi0xiQ8OA_O2Z1kJjWA0nANn30w?usp=sharing).
+Download the checkpoints of best epoch and pre-train model [here](https://drive.google.com/drive/folders/1MhWKZSi0xiQ8OA_O2Z1kJjWA0nANn30w?usp=sharing).
+
+All the preprocessed data can be downloaded [here](https://pan.baidu.com/s/1GAJLcMHsbLmOCwmsqOtTGA?pwd=akiq).
 
 # Training from scratch
 DB-ACENet:
